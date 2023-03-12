@@ -11,9 +11,7 @@
   height: 100vh;
   width: auto;
   display: flex;
-  justify-content: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color:#2f6b30;
 }
 ul{
   list-style: none;
@@ -56,4 +54,122 @@ a{
   padding: 9px;
   margin: 25px 0 15px 0  ;
   border-radius: 20px;
+}
+.label-about{
+  margin-top: 4%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: fit-content;
+  font-family:monospace;
+  color: black ;
+
+}
+.about-h{
+  display: flex;
+  font-size: 5rem;
+  color: black;
+  margin-left: 2%;
+  margin-bottom: 7%;
+}
+
+.hello{
+  text-transform: uppercase;
+ background-image: linear-gradient(
+   -225deg,
+   #231557 0%,
+   #44107a 29%,
+   #ff1361 67%,
+   #fff800 100%
+ );
+ background-size: auto auto;
+ background-clip: border-box;
+ background-size: 200% auto;
+ color: #fff;
+ background-clip: text;
+ text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: textclip 2s linear infinite;
+font-size: 160px;
+display: flex;
+justify-content:space-between;
+}
+
+@keyframes textclip {
+ to {
+   background-position: 200% center;
+ }
+}
+
+.img{
+  width: 200px;
+  height: 200px;
+}
+
+img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+.about-info{
+padding: 3%;
+font-size: 2rem;
+}
+/* projects css */
+.projects-main{
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.projects-h{
+  width: auto;
+  text-align: center;
+  margin-bottom: 0.%;
+  font-size: 2.5rem;
+}
+.card{
+  width: 220px;
+  height: 328px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px 60px;
+}
+.card-img{
+  margin-top: 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+}
+.card-name{
+  width: 100%;
+  text-align: center;
+  height: fit-content;
+
+}
+.card-info{
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding: 0;
+  width: auto;
+  text-align: start;
+  padding-left:2%;
+
+}
+a{
+  margin: 0;
+  padding: 0;
+  margin-right: 18px;
+}
+.link{
+  font-size: 1rem;
+  color: black;
+}
+.link-cont{
+  display: flex;
+  justify-content: space-around;
 }
