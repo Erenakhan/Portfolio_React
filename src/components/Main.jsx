@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import Projects from './Projects'
+import Tech from './Tech'
+import Contact from './Contact'
 
 function Main() {
   const [styles, setStyles] = useState("buttonL")
@@ -17,8 +19,8 @@ function Main() {
             <ul>
                 <li><a href="#about">About me</a> </li>
                 <li><a href="#projects">Projects</a>  </li>
-                <li><a href="#home">Tech</a> </li>
-                <li><a href="#home">Contact</a> </li>
+                <li><a href="#tech">Tech</a> </li>
+                <li><a href="#contact">Contact</a> </li>
             </ul>
         </div>
         <div className="label">
@@ -42,6 +44,13 @@ function Main() {
 
     <div id='projects'>
       <Projects />
+    </div>
+    <hr />
+    <div id='tech'>
+    <Tech />
+    </div>
+    <div className="contact">
+      <Contact />
     </div>
 
     </>
