@@ -74,7 +74,7 @@ function Projects() {
     ]
   return (
     <div>
-        <h1 className='projects-h'>Projects</h1>
+        <h1 className='projects-h'><h2>Projects</h2></h1>
         <br /><br />
         <div className='projects-main'>
 
