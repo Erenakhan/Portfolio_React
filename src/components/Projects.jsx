@@ -69,7 +69,7 @@ function Projects() {
             info: 'I made a portfolio site with React js',
             img: portfolio,
             github:'https://github.com/Erenakhan/Portfolio_React',
-            live:'https://erenakhan.netlify.app/',
+            live:'',
         }
     ]
   return (
