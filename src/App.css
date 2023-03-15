@@ -392,7 +392,7 @@ a{
 
 /*///////////// footer /////////////*/
 .contact-container{
-  height: 70vh;
+  height: 80vh;
   background-color: #000000;
   display:flex;
   align-items: first baseline;
@@ -456,7 +456,7 @@ textarea{
 }
 @media (max-width: 786px) {
   .contact-container{
-    height: 42vh;
+    height: 45vh;
   }
   .form{
     padding-top: 3%;
@@ -503,7 +503,7 @@ textarea{
 }
 @media (max-width: 480px) {
   .contact-container{
-    height: 40vh;
+    height: 43vh;
   }
   .form{
     padding-top: 1%;
