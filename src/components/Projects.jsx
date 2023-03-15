@@ -62,8 +62,8 @@ function Projects() {
             name: 'Weather App',
             info: 'I made Weather app with React js [Weatherapp Api]',
             img: weather,
-            github:'https://github.com/Erenakhan/Portfolio_React',
-            live:'https://erenakhan.netlify.app/',
+            github:'https://github.com/Erenakhan/WeatherApp-React',
+            live:'',
         },{
             name: 'Portfolio',
             info: 'I made a portfolio site with React js',
@@ -81,8 +81,9 @@ function Projects() {
             {
                 project.map((e) =>
                 <div className="card">
-                    <img className="card-img" src={e.img} alt='img' />
-
+                    <div className="card-img">
+                        <img src={e.img} alt='img' />
+                        </div>  
                    <div  className='card-name'>
                      <h2>{e.name}</h2>
                    </div>
@@ -92,7 +93,6 @@ function Projects() {
                    <br /><a className='link' href={e.github}>See Code</a>
                     <br /><a className='link' href={e.live}>See Live</a>
                    </div>
-
                     </div>  
                     
             ) 

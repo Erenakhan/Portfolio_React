@@ -1,6 +1,19 @@
+/* 
+
+desktop: 1200px;
+laptop: 992px;
+tablet: 768px;
+phone:480px; 
+
+*/
 *{
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 .main{
   height: 100vh;
@@ -22,25 +35,48 @@ ul{
 a{
    font-size: 2rem; 
     margin: 30px;
-
    text-decoration: none;
    color: #CBE4DE;
+   
 }
-.nav{
+@media (max-width: 768px) {
+  a{
+      font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  a{
+      font-size: 1rem;
+  }
+}
+  .nav{
   display: flex;
   justify-content: end;
   text-align: end;
   width: 100%;
   height: fit-content;
 }
+
+
 .label{
   margin-top: 10%;
   margin-left: 10%;
   width: fit-content;
-
   font-size: 3rem;
   font-family:monospace;
   color: white ;
+}
+@media (max-width: 768px) {
+  .label{
+      font-size: 2rem;
+      margin-top: 30%;
+  }
+}
+@media (max-width: 480px) {
+  .label{
+    margin-top: 60%;
+      font-size: 1.3rem;
+  }
 }
 .buttonL{
   background-color: orange;
@@ -54,25 +90,20 @@ a{
   margin: 25px 0 15px 0  ;
   border-radius: 10px;
 }
-/* /////////about/////////// */
+/* /////////////////////////about///////////////////////////// */
+
 
 .label-about{
-  margin-top: 4%;
   margin-left: 10%;
-  margin-right: 10%;
-  width: fit-content;
-  font-family:monospace;
-  color: black ;
-  border: #000000 solid;
-  display: grid;
-  grid-template-columns: minmax();
+  margin-right: 10%;  
+  display: flex;  
+}
+.about-text{
+  width: auto;
 }
 .about-h{
-  font-size: 5rem;
-  color: black;
-  margin-bottom: 7%;
-  border: #000000 solid;
-  width: 100%;
+  margin-top: 10%;
+  font-size: 4rem;
 }
 .hello{
   text-transform: uppercase;
@@ -90,10 +121,10 @@ a{
  background-clip: text;
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
- animation: textclip 6s linear infinite;
-font-size: 100px;
-border: solid black;
-width: fit-content;
+ animation: textclip 4s linear infinite;
+ display: flex;
+ justify-content: space-between;
+ font-size: 190px;
 }
 
 @keyframes textclip {
@@ -102,24 +133,92 @@ width: fit-content;
  }
 }
 .img{
-  border: #000000 solid;
   width: fit-content;
-
+  height: fit-content;
+   margin-top: 17%;
 }
 img{
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   margin-left: 10%;
   margin-bottom: 10%;
 }
 .about-info{
-  border: #000000 solid;
   width: 100%;
-padding: 0%;
-font-size: 2rem;
+  padding: 0%;
+  font-size: 2.3rem;
 }
-/* projects css */
+@media (max-width: 992px) {
+  .label-about{
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;  
+    display: flex;  
+  }
+  .about-h{
+    font-size: 2.5rem;
+  }
+  .about-info{
+    font-size: 1.5rem;
+  }
+  .hello{
+    font-size: 70px;
+  }
+  img{
+    width: 130px;
+    height: 130px;
+  }
+}
+
+
+@media (max-width: 786px) {
+  .label-about{
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;  
+    display: flex;  
+  }
+  .about-h{
+    font-size: 2rem;
+  }
+  .about-info{
+    font-size: 1.3rem;
+  }
+  .hello{
+    font-size: 70px;
+  }
+  img{
+    width: 80px;
+    height: 80px;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .label-about{
+    margin-left: 10%;
+    margin-right: 10%;  
+    display: flex;  
+    margin-top: 40%;
+  }
+  .about-h{
+    font-size: 2.3rem;
+  }
+  .about-info{
+    font-size: 1.2rem;
+  }
+  .hello{
+    font-size: 40px;
+  }
+  img{
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+/*////////////////////////// projects Css ////////////////////////////*/
 .projects-main{
   width: auto;
   height: auto;
@@ -134,34 +233,72 @@ font-size: 2rem;
   font-size: 2.5rem;
 }
 .card{
-  width: 380px;
-  height: 500px;
+  width: 360px;
+  height: 480px;
   border: 1px solid black;
   border-radius: 20px;
   margin: 40px 40px;
   box-shadow:  2px 2px 2px 2px black ;
   background-color:#293737 ;
+  padding: 10px;
 }
-.card-img{
-  margin-left: 60px;
-  margin-top: 20px;
+.card-img img{
+  border-radius: 10px; 
   width: 250px;
   height: 250px;
-  border: black solid;
-  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6%;
 }
+.card-img{
+  display: flex;
+  
+}
+ @media (max-width: 480px) {
+  .card{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 40px 40px;
+    box-shadow:  2px 2px 2px 2px black ;
+    background-color:#293737 ;
+    padding: 7px;
+  }
+}
+  @media (max-width: 768px) {
+    .card{
+      width: 330px;
+      height: 430px;
+      border: 1px solid black;
+      border-radius: 20px;
+      margin: 40px 40px;
+      box-shadow:  2px 2px 2px 2px black ;
+      background-color:#293737 ;
+      padding: 8px;
+    }
+  }
+
+  .card-img img{
+    border-radius: 10px; 
+    width: 220px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+  }
+ 
 .card-name{
   width: 100%;
   text-align: center;
   height: fit-content;
-
 }
 .card-info{
   width: auto;
   height: 80px;
   text-align: start;
-  padding-left:8%;
   color: white;
+  text-align: center;
   
 }
 a{
@@ -178,9 +315,10 @@ a{
   display: flex;
   justify-content: center;
 }
-/* ///////tech////////  */
+
+/* //////////////////////////////tech/////////////////////////////// */
 .tech-container{
-  height: 60vh;
+  height: 50vh;
 }
 .tech-h{
   text-align: center;
@@ -195,7 +333,54 @@ a{
   border-radius:0;
   width: 100px;
   height: 100px;
+  
 }
+@media (max-width: 992px) {
+  .tech-h-h{
+    font-size: 4rem;
+  }
+  .tech-container{
+    height: 50vh;
+  }
+  .tech{
+    margin: 10px;
+    margin-top: 5%;
+    border-radius:0;
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .tech-h-h{
+    font-size: 2.5rem;
+  }
+  .tech-container{
+    height: 50vh;
+  }
+}
+  .tech{
+    margin: 10px;
+    margin-top: 5%;
+    border-radius:0;
+    width: 70px;
+    height: 70px;
+  }
+
+@media (max-width: 480px) {
+  .tech-container{
+    height: 30vh;
+  }
+  .tech-h-h{
+    font-size: 2rem;
+  }
+  .tech{
+    margin: 4px;
+    border-radius:0;
+    width: 40px;
+    height: 40px;
+  }
+}  
+
 .techs{
   width: fit-content;
   margin-left: auto;
@@ -204,12 +389,13 @@ a{
   align-items: center;
   justify-content: center;
 }
-/* footer */
+
+/*///////////// footer /////////////*/
 .contact-container{
   height: 70vh;
   background-color: #000000;
   display:flex;
-  align-items: baseline;
+  align-items: first baseline;
 }
 .form{
   margin-left:auto ;
@@ -219,6 +405,9 @@ a{
   height: 300px;
   display: flexbox;
   text-align: center;
+}
+.form-header{
+  font-size: 3rem;
 }
 textarea{
   resize: none
@@ -258,11 +447,106 @@ textarea{
   width: fit-content;
   margin-top: auto;
   margin-bottom: auto;
+   width: 100px;
+  height: 100px;
 }
 .social-container{
-
   margin: 50px;
   align-items: center;
+}
+@media (max-width: 786px) {
+  .contact-container{
+    height: 42vh;
+  }
+  .form{
+    padding-top: 3%;
+    width: 200px;
+    height: 150px;
+  }
+  .form-header{
+    font-size: 1.7rem;
+  }
+  .social-container{
+    margin: 30px;
+  }
+  .social{
+    width: 60px;
+    height: 60px;
+  }
+  input{
+    border-radius: 10px;
+    width: 160px;
+    height: 25px;
+    margin: 3px;
+    background-color: orange;
+    font-size: 0.75rem;
+  }
+  textarea{
+    background-color: orange;
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+  .submit-form{
+    padding: 5px;
+  }
+  .buttonF{
+    padding: 9px;
+    border-radius: 15px;
+    background-color: orange;;
+  }
+  .buttonS{
+    padding: 12px;
+    border-radius: 8px;
+    background-color: orangered;
+  }
+
+}
+@media (max-width: 480px) {
+  .contact-container{
+    height: 40vh;
+  }
+  .form{
+    padding-top: 1%;
+    width: 180px;
+    height: 50px;
+  }
+  .form-header{
+    font-size: 1.3rem;
+  }
+  .social-container{
+    margin: 15px;
+  }
+  .social{
+    width: 40px;
+    height: 40px;
+  }
+  input{
+    border-radius: 10px;
+    width: 150px;
+    height: 20px;
+    margin: 6px;
+    background-color: orange;
+    font-size: 0.5rem;
+  }
+  textarea{
+    background-color: orange;
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+  .submit-form{
+    padding: 3px;
+  }
+  .buttonF{
+    padding: 6px;
+    border-radius: 5px;
+    background-color: orange;;
+  }
+  .buttonS{
+    padding: 7px;
+    border-radius: 8px;
+    background-color: orangered;
+  }
+  
 }
 
 
