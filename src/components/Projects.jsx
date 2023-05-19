@@ -91,7 +91,7 @@ function Projects() {
                    <div className="card-info"><h7 className='card-info'>{e.info}</h7></div>
                    <div className="link-cont">
                    <br /><a className='link' href={e.github}>See Code</a>
-                    <br /><a className='link' href={e.live}>See Live</a>
+                    <br />{e.live ? <a className='link' href={e.live}>See Live</a> : ''}
                    </div>
                     </div>  
                     
